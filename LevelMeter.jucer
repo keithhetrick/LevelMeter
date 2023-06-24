@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="wj9zpb" name="LevelMeter" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" companyName="Hummingbird Hills LLC">
+  <MAINGROUP id="lUdW1q" name="LevelMeter">
+    <GROUP id="{92995566-BFFD-B638-EAC2-FFD9EB1BDF19}" name="Assets">
+      <FILE id="JFWmVT" name="MeterGrill.png" compile="0" resource="1" file="Assets/MeterGrill.png"/>
+    </GROUP>
+    <GROUP id="{628C7402-E706-94A9-ED83-2B254E38B01B}" name="Source">
+      <GROUP id="{F2E49CDE-CB35-B6C9-299A-83F605FB0710}" name="Utils">
+        <FILE id="mnxgkn" name="Fifo.h" compile="0" resource="0" file="Source/Fifo.h"/>
+      </GROUP>
+      <GROUP id="{A90E3362-471A-44F4-5C6A-D65F36E4F4D9}" name="Component">
+        <FILE id="KftWn5" name="CircularMeter.h" compile="0" resource="0" file="Source/CircularMeter.h"/>
+        <FILE id="cD017O" name="HorizontalMeter.h" compile="0" resource="0"
+              file="Source/HorizontalMeter.h"/>
+        <FILE id="rHdhmy" name="VerticalDiscreteMeter.h" compile="0" resource="0"
+              file="Source/VerticalDiscreteMeter.h"/>
+        <FILE id="ogc0b9" name="VerticalGradientMeter.h" compile="0" resource="0"
+              file="Source/VerticalGradientMeter.h"/>
+      </GROUP>
+      <FILE id="tMwwnv" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="SFbRVJ" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="bwOdXe" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="JqKPFq" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="LevelMeter"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="LevelMeter"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Users/keithhetrick/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="/Users/keithhetrick/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
